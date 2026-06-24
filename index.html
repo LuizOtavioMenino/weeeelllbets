@@ -8,7 +8,7 @@
 </head>
 <body>
     
-</body>
+
     <header>
         <h1>WellBets<span>2026</span></h1>
     </header>
@@ -20,11 +20,11 @@
             <h5>Brasil vs Haiti</h5>
             <p>20/06 - 21:30</p>
             <div class="input-partida">
-                <input type="number" min="0" max="10" placeholder="Brasil" id="time1-1">
-                <input type="number" min="0" max="10" placeholder="Haiti" id="time2-1">
+                <input type="number" min="0"  placeholder="Brasil" id="time1-1">
+                <input type="number" min="0"  placeholder="Haiti" id="time2-1">
         
             </div>
-            <button class="btn-palpite">Palpite</button>
+            <button onclick="salvarPalpite('Brasil VS Haiti', 1)" class="btn-palpite">Palpite</button>
             
         </article>
 
@@ -32,8 +32,19 @@
             <h5>Holanda VS Japão</h5>
             <p>16/06 - 16:00</p>
             <div class="input-partida">
+            <input type="number" min="0"  placeholder="Holanda" id="time1-2">
+            <input type="number" min="0"  placeholder="Japão" id="time2-2">
 
             </div>
+            <button onclick="salvarPalpite('Holanda VS Japão', 2)" class="btn-palpite">Palpite</button>
+
         </article>
     </main>
+    <footer>
+
+    </footer>
+    <!-- js externo -->
+    <script src="./src/js/script.js"></script>
+    </body>
+
 </html>
